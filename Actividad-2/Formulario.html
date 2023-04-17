@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad2-Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1><strong>SEGUNDA ACTIVIDAD</strong></h1>
+        <h2>Isasmendi, Eugenia Yanina</h2>
+        <hr>
+        <br>
+    </header>
+
+    <form>
+        <h1>Formulario de Registro</h1>
+        <label for="nombre">Nombre(s)</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br><br>
+
+        <label for="nombre">Apellido(s)</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su apellido"><br><br>
+
+        <label for="tipo-doc">Tipo de documento</label>
+        <select name="tipo-doc" id="tipo-doc">
+            <option value="1">Documento único</option>
+            <option value="2">Libreta de Enrolamiento</option>
+            <option value="3">Libreta Cívica</option>
+            <option value="4">Otros</option>
+        </select><br><br>
+
+        <label for="num-doc">Número de Documento</label>
+        <input type="number" name="num-doc" id="num-doc" placeholder="Ingrese su documento" required><br><br>
+
+        <label for="sexo-genero">Sexo/Genero</label><br><br>
+        <input type="radio" name="sexo" id="sexo">Femenino
+        <input type="radio" name="sexo" id="sexo">Masculino
+        <input type="radio" name="sexo" id="sexo">X <br><br>
+
+        <label for="fecha-nac">Fecha de Nacimiento</label>
+        <input type="date" name="fecha-nac" id="fecha-nac"><br><br>
+
+        <label for="pais">Pais de Nacimiento</label><br><br>
+        <select name="pais" id="pais">
+            <option value="0">Seleccione </option>
+            <option value="OTR">{Otro País}</option>
+            <option value="ARG" selected="">Argentina</option>
+            <option value="BOL">Bolivia</option>
+            <option value="BRA">Brasil</option>
+            <option value="CHL">Chile</option>
+            <option value="COL">Colombia</option>
+            <option value="ECU">Ecuador</option>
+            <option value="PRY">Paraguay</option>
+            <option value="PER">Peru</option>
+            <option value="URY">Uruguay</option>
+            <option value="VEN">Venezuela</option>
+        </select><br><br>
+        <label for="provincia">Provincia</label><br><br>
+        <select name="provincia" id="provincia">
+            <option value="0" selected="">Seleccione la provincia</option>
+            <option value="1">Buenos Aires</option>
+            <option value="3">Catamarca</option>
+            <option value="4">Chaco</option>
+            <option value="5">Chubut</option>
+            <option value="2">Ciudad Autónoma de Buenos Aires</option>
+            <option value="6">Córdoba</option>
+            <option value="7">Corrientes</option>
+            <option value="8">Entre Ríos</option>
+            <option value="9">Formosa</option>
+            <option value="10">Jujuy</option>
+            <option value="11">La Pampa</option>
+            <option value="12">La Rioja</option>
+            <option value="13">Mendoza</option>
+            <option value="14">Misiones</option>
+            <option value="15">Neuquén</option>
+            <option value="16">Río Negro</option>
+            <option value="17">Salta</option>
+            <option value="18">San Juan</option>
+            <option value="19">San Luis</option>
+            <option value="20">Santa Cruz</option>
+            <option value="21">Santa Fe</option>
+            <option value="22">Santiago del Estero</option>
+            <option value="23">Tierra del Fuego, Antártida e Islas Atlántico Sur</option>
+            <option value="24">Tucumán</option>
+        </select><br><br>
+
+        <label for="dpto">Departamento</label><br><br>
+        <select name="cod_dpto" id="cod_dpto">
+            <option value="0d" selected="">Seleccione el departamento</option>
+            <option value="01d">COCHINOCA</option>
+            <option value="02d">DOCTOR MANUEL BELGRANO</option>
+            <option value="03d">EL CARMEN</option>
+            <option value="04d">HUMAHUACA</option>
+            <option value="05d">LEDESMA</option>
+            <option value="06d">PALPALA</option>
+            <option value="07d">RINCONADA</option>
+            <option value="08d">SAN ANTONIO</option>
+            <option value="09d">SAN PEDRO</option>
+            <option value="010d">SANTA BARBARA</option>
+            <option value="011d">SANTA CATALINA</option>
+            <option value="012d">SUSQUES</option>
+            <option value="013d">TILCARA</option>
+            <option value="014d">TUMBAYA</option>
+            <option value="015d">VALLE GRANDE</option>
+            <option value="016d">YAVI</option>
+        </select><br><br>
+
+        <label for="localidad">Localidad</label><br><br>
+        <select name="localidad" id="localidad">
+            <option value="0l" selected="">Seleccione la localidad</option>
+            <option value="loc1_1">LA ALMONA</option>
+            <option value="loc1_2">LEON</option>
+            <option value="loc1_3">LOS ALISOS</option>
+            <option value="loc1_4">LOZANO</option>
+            <option value="loc1_5">OCLOYAS</option>
+            <option value="loc1_6">REYES</option>
+            <option value="loc1_7">SAN SALVADOR DE JUJUY</option>
+            <option value="loc1_8">TERMAS DE REYES</option>
+            <option value="loc1_9">TESORERO</option>
+            <option value="loc1_0">TUNALITO</option>
+            <option value="loc1_11">YALA</option>
+        </select><br><br>
+
+        <label for="cod-postal">Código Postal</label><br><br>
+        <input type="number" name="cod-postal" id="cod-postal" maxlength="10" value=""><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su email " required><br><br>
+
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" id="pass" size="tamaño" name="Contraseña" placeholder="Ingrese su contraseña"
+            required><br><br><br>
+
+        <p><a href="#"><input type="checkbox" name="acuerdo" id="acuerdo" required>Estoy de acuerdo con los terminos y
+                condiciones <br><br><br>
+            </a></p><br>
+        <label for="opinion">Comentario:</label><br><br>
+        <textarea type="t" name="opinion" id="opinion" cols="50" rows="10"
+            placeholder="¿Desea dejarnos algún comentario?.."></textarea><br><br>
+        <input type="submit" value="Registrar"><br>
+        <input type="checkbox" name="recuerdame" id="recuerdame"> <em>Recordar contraseña</em>
+        <br><br>
+
+        <p><a href="#">Olvidé mi contraseña</a></p><br><br>
+        <small>*Estos campos son obligatorios debe de completar</small>
+
+        <br><br>
+        <button onclick="alert('Gracias, que tengas un lindo dia :)');">
+            SALUDOS
+        </button><br><br>
+    </form>
+
+</body>
+
+</html>
